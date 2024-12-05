@@ -50,4 +50,10 @@ class CalculatorTest {
     void multiplyTwoNumbers() {
         assertEquals(1, calculator.multiplyTwoNumbers(1, 1), "1 * 1 should equal 1");
     }
+
+    @Test
+    @DisplayName("1 / 1 = 1")
+    void divideTwoNumbers() {
+        assertEquals(1, calculator.divideTwoNumbers(1, 1), "1 / 1 should equal 1");
+    }
 }
