@@ -29,4 +29,9 @@ public class Calculator {
         LOGGER.info("Dividing two numbers: {} / {} = {}", a, b, a / b);
         return a / b;
     }
+
+    public int modTwoNumbers(int a, int b) {
+        LOGGER.info("Dividing two numbers: {} % {} = {}", a, b, a % b);
+        return a % b;
+    }
 }
