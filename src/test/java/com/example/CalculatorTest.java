@@ -56,4 +56,16 @@ class CalculatorTest {
     void divideTwoNumbers() {
         assertEquals(1, calculator.divideTwoNumbers(1, 1), "1 / 1 should equal 1");
     }
+
+    @Test
+    @DisplayName("1 % 1 = 0")
+    void moduleTwoNumbers() {
+        assertEquals(0, calculator.modTwoNumbers(1, 1), "1 % 1 should equal 0");
+    }
+
+    @Test
+    @DisplayName("1 % 2 = 1")
+    void moduleTwoNumbersShouldBe1() {
+        assertEquals(1, calculator.modTwoNumbers(1, 2), "1 % 2 should equal 1");
+    }
 }
